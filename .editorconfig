@@ -1,0 +1,8 @@
+[*.properties]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 4
+max_line_length = off
+ij_properties_keep_blank_lines = true
+ij_properties_spaces_around_key_value_delimiter = true

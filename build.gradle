@@ -1,0 +1,27 @@
+import java.nio.file.Files
+
+tasks.register('validate') {
+    File folder = file('src')
+    Files.list(folder.toPath()).forEach {
+        String fileName = it.toFile().getName();
+        Properties properties = new Properties()
+        properties.load(it.newInputStream())
+        properties.each {
+            if (it.key == null || it.key.toString().isBlank() || it.value == null) {
+                throw new IllegalArgumentException('Failed validation on file ' + fileName)
+            }
+            String value = it.value.toString();
+            boolean failed = false
+            if (value.startsWith("\'") || value.startsWith("\"")) {
+                failed = true
+            } else if (value.count('{') != value.count('}')) {
+                failed = true
+            } else if (value.isBlank()) {
+                failed = true
+            }
+            if (failed) {
+                throw new IllegalArgumentException('Failed validation on file ' + fileName + ': ' + it.key)
+            }
+        }
+    }
+}
