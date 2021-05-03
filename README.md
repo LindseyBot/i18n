@@ -7,7 +7,7 @@ If you are planning on doing a lot of changes, please add them all to the same p
 
 All contributions/pull requests are welcome!
 
-### Translation status:
+## Translation status:
 
 This table was last updated on 2021-05-02.
 
@@ -16,7 +16,7 @@ This table was last updated on 2021-05-02.
 | en_US (English US)    | 100%          |
 | pt_BR (Portuguese BR) | 0%            |
 
-### Format
+## Format
 
 Special characters like `{0}` and `{1}` represent variables, and are filled on the order specified by the number inside
 the bracket. This means a string such as:
