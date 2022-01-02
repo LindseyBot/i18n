@@ -11,10 +11,11 @@ All contributions/pull requests are welcome!
 
 This table was last updated on 2021-05-02.
 
-| Language              | % Translated  |
-| --------------------- |:-------------:|
-| en_US (English US)    | 100%          |
-| pt_BR (Portuguese BR) | 0%            |
+| Language              | % Translated |
+|-----------------------|:------------:|
+| en_US (English US)    |     100%     |
+| pt_BR (Portuguese BR) |      0%      |
+| sv_SE (Swedish)       |      ?%      |
 
 ## Format
 
